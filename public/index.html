@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NimbusShare - Share Files with a Breeze</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 style="color: #3bafda;">NimbusShare</h1>  <p>Share files effortlessly!</p>  <form id="uploadForm" enctype="multipart/form-data">
+      <div class="input-group">
+        <input type="file" name="file" id="fileInput" required>
+        <button type="submit" class="btn btn-outline-primary">Upload</button>
+      </div>
+    </form>
+    <div id="message"></div>
+    <h2>Uploaded Files:</h2>
+    <div id="fileList"></div>
+    <div id="shareLinkContainer"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
