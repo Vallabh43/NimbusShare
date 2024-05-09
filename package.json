@@ -1,0 +1,15 @@
+{
+  "name": "NimbusShare",
+  "version": "1.0.0",
+  "description": "Azure-based file sharing system in Node.js",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "azure-storage": "^2.10.1",
+    "bootstrap": "^5.3.3",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.5.0"
+  }
+}
