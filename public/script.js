@@ -1,6 +1,6 @@
 document.getElementById('uploadForm').addEventListener('submit', async (e) => {
     e.preventDefault();
-    const fileInput = document.getElementById('fileInput');
+    const fileInput = document.getElementById('formFileMultiple');
     const formData = new FormData();
     formData.append('file', fileInput.files[0]);
   
@@ -56,7 +56,7 @@ async function listFiles() {
   
         const shareBtn = document.createElement('button');
         shareBtn.setAttribute('type', 'button');
-        shareBtn.classList.add('btn', 'btn-outline-info');
+        shareBtn.classList.add('btn', 'btn-outline-warning');
         shareBtn.textContent = 'Share';
         shareBtn.addEventListener('click', () => getShareableLink(file.name));
   

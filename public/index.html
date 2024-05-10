@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div>
   <div class="container">
     <h1 style="color: #3bafda;">NimbusShare</h1>  <p>Share files effortlessly!</p>  <form id="uploadForm" enctype="multipart/form-data">
       <div class="input-group">
-        <input type="file" name="file" id="fileInput" required>
+        <input class="form-control" type="file" id="formFileMultiple" required>
         <button type="submit" class="btn btn-outline-primary">Upload</button>
       </div>
     </form>
@@ -20,6 +21,7 @@
     <div id="fileList"></div>
     <div id="shareLinkContainer"></div>
   </div>
+</div>
   <script src="script.js"></script>
 </body>
 </html>
